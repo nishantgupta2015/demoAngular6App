@@ -1,0 +1,19 @@
+<p>
+  hello works!
+ </p>
+ <h2 *ngIf = "displayName">if directive conditon in angular</h2>
+ <div [ngSwitch] = "color">
+   <div *ngSwitchCase="'red'"> piked red</div>
+   <div *ngSwitchCase="'blue'"> piked blue</div>
+   <div *ngSwitchCase="'green'"> piked green</div>
+   <div *ngSwitchDefault> piked dfault</div>
+
+ </div> 
+
+ <div *ngFor = "let color of forColor; index as i">{{i}}  {{color}}</div>
+ <h2>{{pipes | json}}</h2>
+ <h2>{{.25 | percent}}</h2>
+ <h2>{{date}}</h2>
+ <h2>{{date | date:"short"}}</h2>
+ <h2>{{date | date:"shortDate"}}</h2>
+ <h2>{{date | date:"shortTime"}}</h2>
